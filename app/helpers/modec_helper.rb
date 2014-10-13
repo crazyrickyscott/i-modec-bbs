@@ -1,0 +1,2 @@
+module ModecHelper
+end

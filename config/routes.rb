@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  resource :modec,controller: :modec, only: :index do
+    member do
+      get :part
+      get :topic
+      get :about
+      get :user_center
+    end
+  end
+  root 'modec#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
